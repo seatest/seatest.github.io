@@ -2,7 +2,7 @@ let myImg = document.querySelector("#myImg");
 
 let intID;
 let rotating = false;
-let timeout = 100;
+let timeout = 10;
 
 myImg.onclick = function()
 {
@@ -58,3 +58,5 @@ if(oldName == null || oldName == 'null' || oldName == ''){
 } else {
 	setHeader(oldName);
 }
+
+
