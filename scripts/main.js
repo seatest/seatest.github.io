@@ -37,20 +37,6 @@ theButton = document.querySelector('button');
 
 function setHeader(name){document.querySelector('h1').textContent = name + ", нажми на лисичку :)";}
 theButton.onclick = function(){setUserName();};
-
-function setUserName()
-{
-	let newName = prompt("ВВЕДИ СВОЁ ИМЯ");
-	if(newName == null || newName == 'null' || newName == '')
-	{
-		setUserName();
-  }	else {
-		localStorage.setItem('name', newName);
-    setHeader(newName);
-	}
-	
-}
-
 let oldName = localStorage.getItem('name');
 
 if(oldName == null || oldName == 'null' || oldName == ''){
@@ -58,5 +44,22 @@ if(oldName == null || oldName == 'null' || oldName == ''){
 } else {
 	setHeader(oldName);
 }
+
+function setUserName()
+{
+	let newName = prompt("ВВЕДИ СВОЁ ИМЯ");
+	if(newName == null || newName == 'null' || newName == '')
+	{
+		setHeader(oldName);
+  }	else {
+		localStorage.setItem('name', newName);
+    setHeader(newName);
+	}
+	
+}
+
+
+
+
 
 
