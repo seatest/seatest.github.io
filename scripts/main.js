@@ -34,30 +34,36 @@ function rotate()
 
 // Adding user name
 theButton = document.querySelector('button');
+theButton.onclick = function(){setNewName();};
 
-function setHeader(name){document.querySelector('h1').textContent = name + ", нажми на лисичку :)";}
-theButton.onclick = function(){setUserName();};
-let oldName = localStorage.getItem('name');
+setOldName();
 
-if(oldName == null || oldName == 'null' || oldName == ''){
-	setUserName();
-} else {
-	setHeader(oldName);
+function setOldName()
+{
+	let oldName = localStorage.getItem('name');
+
+	if(oldName == null || oldName == 'null' || oldName == ''){
+		setNewName();
+	} else {
+		setHeader(oldName);
+	}
 }
-
-function setUserName()
+	
+function setNewName()
 {
 	let newName = prompt("ВВЕДИ СВОЁ ИМЯ");
 	if(newName == null || newName == 'null' || newName == '')
 	{
-		setHeader(oldName);
+		setOldName();
   }	else {
 		localStorage.setItem('name', newName);
     setHeader(newName);
 	}
-	
 }
 
+function setHeader(name){
+	document.querySelector('h1').textContent = name + ", нажми на лисичку :)";
+}
 
 
 
