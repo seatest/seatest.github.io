@@ -1,0 +1,11 @@
+Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. Firefox is officially available for Windows 7 or newer, macOS, and Linux. Its unofficial ports are available for various Unix and Unix-like operating systems including FreeBSD, OpenBSD, NetBSD, illumos, and Solaris Unix. Firefox is also available for Android and iOS; however, the iOS version uses the WebKit layout engine instead of Gecko due to platform limitations, as with all other iOS web browsers.
+
+#C14242
+
+<link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+
+font-family: 'Comic Neue', cursive;
+
+227 241 202
+
+Pavel58887
