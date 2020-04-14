@@ -8,7 +8,7 @@ myImg.onclick = function()
 	if(!rotating)
 	{
 		rotating = true;
-		intID = setInterval(rotate, 100);
+		intID = setInterval(rotate, 1000);
 	}
 
 	else
